@@ -1,7 +1,10 @@
 /***********************************************************
  * File: hello.go
- * Purpose: prints "hello, world" to the screen
+ *
+ * Purpose: prints "hello, world" to the screen.
+ *
  * Author: socrates
+ *
  **********************************************************/
 package main
 
