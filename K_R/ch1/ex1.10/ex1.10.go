@@ -6,7 +6,7 @@
  * This makes tabs and backslashes visible in an unambiguous
  * way
  *
- * Author: Alain
+ * Author: socrates
  *
  **********************************************************/
  package main
