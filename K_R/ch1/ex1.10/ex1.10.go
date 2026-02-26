@@ -35,6 +35,8 @@
      switch r {
      case '\t':
         fmt.Print("\\t")
+     case '\b':
+       fmt.Print("\\b")
      case '\\':
        fmt.Print("\\\\")
      default:
