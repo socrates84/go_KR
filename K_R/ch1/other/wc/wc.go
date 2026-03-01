@@ -40,13 +40,17 @@
      } else if r == ' ' || r == '\t' || r == '\n' {
         if r == '\n' {
           nl++
+        } else {
+          nc++
         }
         inWord = false
      } else if inWord == false {
         inWord = true
         nw++
+        nc++
+     }  else {
+        nc++
      }
-     nc++
    }
 
    fmt.Printf("nl = %d, nw = %d, nc = %d\n", nl, nw, nc)

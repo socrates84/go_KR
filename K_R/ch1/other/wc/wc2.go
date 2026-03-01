@@ -55,7 +55,10 @@
           nw++
         }
      }
-     nc++
+     
+     if r != '\n' {
+        nc++
+      } 
    }
 
    fmt.Printf("nl = %d, nw = %d, nc = %d\n", nl, nw, nc)
