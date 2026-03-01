@@ -1,5 +1,5 @@
 /**********************************************************
- * File: wc.c
+ * File: wc.go
  *
  * Purpose: counts lines, words and characters, This is a
  * bare-bones version of the UNIX program wc
