@@ -13,6 +13,7 @@
  import (
    "bufio"
    "fmt"
+   "io"
    "os"
  )
 
@@ -25,8 +26,13 @@
 
    for {
      r, _, err := reader.ReadRune()
-     if err != nil {
+     if err == io.EOF {
        break
+     }
+
+     if err != nil {
+       fmt.Fprintln(os.Stderr, "error reading input:", err)
+       os.Exit(1)
      }
 
      if r >= '0' && r <= '9' {
